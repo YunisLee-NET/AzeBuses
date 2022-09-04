@@ -1,0 +1,39 @@
+﻿body {
+    margin: 0;
+}
+
+* {
+    text-decoration: none;
+}
+
+.menular {
+    background-color: #005ea0;
+}
+
+.menular > ul > li {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+ul {
+    background-color: #005ea0;
+    list-style-type: none;
+    height: 20cm;
+    margin-right: 35px;
+}
+
+li {
+}
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+li a:hover{
+    color: white;
+}

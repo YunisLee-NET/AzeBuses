@@ -1,0 +1,47 @@
+﻿body {
+    background-image: linear-gradient(to top left, #3498db,#bdc3c7,#e74c3c);
+    background-attachment: fixed;
+}
+
+
+.login {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.qeydiyyat {
+    background-color: rgb(114,119,120,0.4);
+    padding-top: 30px;
+    height: 330px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.textboxarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.textboxarea img {
+    margin-bottom: 10px;
+}
+
+.element {
+    width: 100px;
+}
+
+#btnGirish {
+    background-color: aqua;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

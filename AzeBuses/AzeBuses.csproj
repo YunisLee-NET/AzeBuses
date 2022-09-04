@@ -1,0 +1,427 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90887B7F-498C-483F-898F-1E213637DBB8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AzeBuses</RootNamespace>
+    <AssemblyName>AzeBuses</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminXett.aspx" />
+    <Content Include="Admin\AdminElaqe.aspx" />
+    <Content Include="Admin\AdminFooter.aspx" />
+    <Content Include="Admin\AdminInfo.aspx" />
+    <Content Include="Admin\AdminPanel.aspx" />
+    <Content Include="Admin\Admin_BusCard.aspx" />
+    <Content Include="AnaSehife.aspx" />
+    <Content Include="Content\adminpanel.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\login.css" />
+    <Content Include="Content\mainstyle.css" />
+    <Content Include="Dasiyicilar.aspx" />
+    <Content Include="Dayanacaqlar.aspx" />
+    <Content Include="Elaqe.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Gonderildi.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="NMM_HUB.aspx" />
+    <Content Include="photos\1.jpg" />
+    <Content Include="photos\100.jpg" />
+    <Content Include="photos\103.jpg" />
+    <Content Include="photos\105.jpg" />
+    <Content Include="photos\107.jpg" />
+    <Content Include="photos\108B.jpg" />
+    <Content Include="photos\111.jpg" />
+    <Content Include="photos\118A.jpg" />
+    <Content Include="photos\118B.jpg" />
+    <Content Include="photos\119-1.jpg" />
+    <Content Include="photos\119.jpg" />
+    <Content Include="photos\120-1.jpg" />
+    <Content Include="photos\120-2.jpg" />
+    <Content Include="photos\123.jpg" />
+    <Content Include="photos\125.jpg" />
+    <Content Include="photos\126.jpg" />
+    <Content Include="photos\127.jpg" />
+    <Content Include="photos\13-1.jpg" />
+    <Content Include="photos\13.jpg" />
+    <Content Include="photos\131.jpg" />
+    <Content Include="photos\135-1.jpg" />
+    <Content Include="photos\135.jpg" />
+    <Content Include="photos\136.jpg" />
+    <Content Include="photos\139.jpg" />
+    <Content Include="photos\14.jpg" />
+    <Content Include="photos\140.jpg" />
+    <Content Include="photos\148-1.jpg" />
+    <Content Include="photos\148.jpg" />
+    <Content Include="photos\149-1.jpg" />
+    <Content Include="photos\149.jpg" />
+    <Content Include="photos\15.jpg" />
+    <Content Include="photos\157.jpg" />
+    <Content Include="photos\160.jpg" />
+    <Content Include="photos\162.jpg" />
+    <Content Include="photos\163.jpg" />
+    <Content Include="photos\164-1.jpg" />
+    <Content Include="photos\164.jpg" />
+    <Content Include="photos\165.jpg" />
+    <Content Include="photos\169.jpg" />
+    <Content Include="photos\171.jpg" />
+    <Content Include="photos\172.jpg" />
+    <Content Include="photos\173A.jpg" />
+    <Content Include="photos\173B.jpg" />
+    <Content Include="photos\174.jpg" />
+    <Content Include="photos\176.jpg" />
+    <Content Include="photos\18-1.jpg" />
+    <Content Include="photos\18.jpg" />
+    <Content Include="photos\185.jpg" />
+    <Content Include="photos\189.jpg" />
+    <Content Include="photos\193.jpg" />
+    <Content Include="photos\194.jpg" />
+    <Content Include="photos\195.jpg" />
+    <Content Include="photos\197.jpg" />
+    <Content Include="photos\198.jpg" />
+    <Content Include="photos\199.jpg" />
+    <Content Include="photos\2.jpg" />
+    <Content Include="photos\204.jpg" />
+    <Content Include="photos\205.jpg" />
+    <Content Include="photos\206.jpg" />
+    <Content Include="photos\211.jpg" />
+    <Content Include="photos\216.jpg" />
+    <Content Include="photos\217.jpg" />
+    <Content Include="photos\22.jpg" />
+    <Content Include="photos\24.jpg" />
+    <Content Include="photos\26.jpg" />
+    <Content Include="photos\27.jpg" />
+    <Content Include="photos\29.jpg" />
+    <Content Include="photos\30.jpg" />
+    <Content Include="photos\32.jpg" />
+    <Content Include="photos\33.jpg" />
+    <Content Include="photos\38.jpg" />
+    <Content Include="photos\39.jpg" />
+    <Content Include="photos\40.jpg" />
+    <Content Include="photos\49.jpg" />
+    <Content Include="photos\5.jpg" />
+    <Content Include="photos\57.jpg" />
+    <Content Include="photos\6.jpg" />
+    <Content Include="photos\60.jpg" />
+    <Content Include="photos\62.jpg" />
+    <Content Include="photos\65.jpg" />
+    <Content Include="photos\66.jpg" />
+    <Content Include="photos\67.jpg" />
+    <Content Include="photos\70.jpg" />
+    <Content Include="photos\71.jpg" />
+    <Content Include="photos\76.jpg" />
+    <Content Include="photos\77.jpg" />
+    <Content Include="photos\78.jpg" />
+    <Content Include="photos\79.jpg" />
+    <Content Include="photos\7A.jpg" />
+    <Content Include="photos\81.jpg" />
+    <Content Include="photos\85.jpg" />
+    <Content Include="photos\88A.jpg" />
+    <Content Include="photos\91.jpg" />
+    <Content Include="photos\92.jpg" />
+    <Content Include="photos\96.jpg" />
+    <Content Include="photos\axtar.png" />
+    <Content Include="photos\banner.jpg" />
+    <Content Include="photos\bb.jpg" />
+    <Content Include="photos\collage.jpg" />
+    <Content Include="photos\customer-service.png" />
+    <Content Include="photos\Email.png" />
+    <Content Include="photos\Face.png" />
+    <Content Include="photos\Insta.png" />
+    <Content Include="photos\knmm.jpg" />
+    <Content Include="photos\kod.jpg" />
+    <Content Include="photos\koroglu.jpg" />
+    <Content Include="photos\logo.jpg" />
+    <Content Include="photos\male_user_60px.png" />
+    <Content Include="photos\menu.png" />
+    <Content Include="photos\menu_rounded_24px.png" />
+    <Content Include="photos\Q1.jpg" />
+    <Content Include="photos\yer.png" />
+    <Content Include="photos\YT.png" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Xetler.aspx" />
+    <Content Include="Xett1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminXett.aspx.cs">
+      <DependentUpon>AdminXett.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminXett.aspx.designer.cs">
+      <DependentUpon>AdminXett.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminElaqe.aspx.cs">
+      <DependentUpon>AdminElaqe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminElaqe.aspx.designer.cs">
+      <DependentUpon>AdminElaqe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminFooter.aspx.cs">
+      <DependentUpon>AdminFooter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminFooter.aspx.designer.cs">
+      <DependentUpon>AdminFooter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminInfo.aspx.cs">
+      <DependentUpon>AdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminInfo.aspx.designer.cs">
+      <DependentUpon>AdminInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.aspx.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.aspx.designer.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_BusCard.aspx.cs">
+      <DependentUpon>Admin_BusCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_BusCard.aspx.designer.cs">
+      <DependentUpon>Admin_BusCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSehife.aspx.cs">
+      <DependentUpon>AnaSehife.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnaSehife.aspx.designer.cs">
+      <DependentUpon>AnaSehife.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusSite.Master.cs">
+      <DependentUpon>BusSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusSite.Master.designer.cs">
+      <DependentUpon>BusSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ClassSQL.cs" />
+    <Compile Include="Dasiyicilar.aspx.cs">
+      <DependentUpon>Dasiyicilar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dasiyicilar.aspx.designer.cs">
+      <DependentUpon>Dasiyicilar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dayanacaqlar.aspx.cs">
+      <DependentUpon>Dayanacaqlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dayanacaqlar.aspx.designer.cs">
+      <DependentUpon>Dayanacaqlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elaqe.aspx.cs">
+      <DependentUpon>Elaqe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Elaqe.aspx.designer.cs">
+      <DependentUpon>Elaqe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Gonderildi.aspx.cs">
+      <DependentUpon>Gonderildi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gonderildi.aspx.designer.cs">
+      <DependentUpon>Gonderildi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NMM_HUB.aspx.cs">
+      <DependentUpon>NMM_HUB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NMM_HUB.aspx.designer.cs">
+      <DependentUpon>NMM_HUB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xetler.aspx.cs">
+      <DependentUpon>Xetler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xetler.aspx.designer.cs">
+      <DependentUpon>Xetler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Xett1.aspx.cs">
+      <DependentUpon>Xett1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xett1.aspx.designer.cs">
+      <DependentUpon>Xett1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BusSite.Master" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Admin\AdminMaster.Master" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50835</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50835/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,120 @@
+﻿body {
+}
+
+.basliq {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuul {
+    position: relative;
+    z-index: 1;
+}
+
+.menu ul li {
+    background-color: rgb(9,22,77);
+    list-style-type: none;
+    float: left;
+    padding: 5px 15px 5px 15px;
+    transition: 0.8s;
+}
+
+    .menu ul li:hover {
+        cursor: pointer;
+        background-color: #012640;
+    }
+
+    .menuli a {
+        text-decoration: none;
+        color: white;
+    }
+
+.menu span {
+    color: white;
+}
+
+.footerlogo {
+    height: 180px;
+}
+
+.mobilemenubtn {
+    height: 1.5cm;
+    background-color: rgb(9,22,77);
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .mobilemenubtn {
+        display: block;
+    }
+
+    .menuli {
+        background-color: #005ea0;
+        float: none;
+        padding: 5px 30px 5px 30px;
+        margin-left: -20px;
+        transition: 0.8s;
+        width: 100%;
+        border-bottom: 1px solid white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .menuul {
+        display: none;
+        margin-top: -15.2px;
+    }
+
+    .footerlogo {
+        height: 120px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .menuul {
+        display: block !important;
+    }
+}
+
+
+.card {
+    width: 380px;
+    transform: scale(0.9);
+}
+
+.busa {
+    color: black;
+    text-decoration: none;
+}
+.busa:hover{
+    color: black;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #ededed;
+}
+
+.card-img-top {
+    transform: scale(0.8);
+}
+
+
+.busphotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esas {
+    padding-left: 25px;
+}
+
+.esas > .form-control {
+    margin-bottom: 20px;
+}
+
+#btnSend {
+    margin-bottom: 20px;
+}

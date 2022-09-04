@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BusSite.master.cs" Inherits="AzeBuses.BusSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Azərbaycanın avtobus saytı</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/mainstyle.css" rel="stylesheet" />
+    <style>
+        .footer {
+            background-color: #be4029;
+            height: 250px;
+            width: 100%;
+        }
+
+        .f-ul li {
+            list-style-type: circle;
+        }
+
+        .f-ul li a {
+            text-decoration: none;
+        }
+
+        .footer-li {
+            transition: 0.5s;
+            cursor: pointer;
+            width: 6cm;
+            color: white;
+        }
+
+        .footer-li span {
+            color: white;
+        }
+
+            .footer-li:hover {
+                margin-left: 15px;
+                color: #F48200;
+            }
+
+        .sosial {
+            list-style-type: none;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        #footer {
+            width: 100%;
+            background-color: #be4029;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container col-lg-12">
+                <div class="basliq">
+                    <div class="col-md-5">
+                        <img style="height: 150px;" src="logo/logo.jpg" />
+                    </div>
+                    <div class="col-md-7" style="background-color: red;">
+                        <img style="height: 150px; width: 100%;;" src="logo/banner.jpg" />
+                    </div>
+                </div>
+                <script>
+                       $(document).ready(function(){
+                   $(".menubtn").click(function(){
+                $(".menuul").toggle(500);
+                   });
+                 });
+                </script>
+                <div class="mobilemenubtn">
+                    <a href="#"><img class="menubtn" src="logo/menu.png" /></a>
+                </div>
+
+                <%--<div class="menu col-lg-12" style="background-color: #005ea0;">
+
+                    <ul class="menuul">
+                        <li class="menuli"><a href="AnaSehife.aspx"><span>Ana səhifə</span></a></li>
+                        <li class="menuli"><span>Dayanacaqlar</span></li>
+                        <li class="menuli"><span>Marşrut xətləri</span></li>
+                        <li class="menuli"><a href="Dasiyicilar.aspx"><span>Daşıyıcılar</span></a></li>
+                        <li class="menuli"><span>Nəqliyyat Mübadilə Mərkəzləri</span></li>
+                        <li class="menuli"><span>Yollarda vəziyyət</span></li>
+                        <li class="menuli"><span>Haqqımızda</span></li>
+                    </ul>
+
+                    
+
+                </div>--%>
+
+                <asp:Literal ID="ltlMenu" runat="server"></asp:Literal>
+                
+            </div>
+
+                    <br />
+            <br />
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <br />
+            <div id="footer" class="container  col-lg-12">
+                    <br />
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="footerlogo" src="logo/logo.jpg" />
+                        
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="f-ul">
+                            <li class="footer-li"><a href="AnaSehife.aspx"><span>Ana səhifə</span></a></li>
+                            <li class="footer-li"><a href="Dayanacaqlar.aspx"><span>Dayanacaqlar</span></a></li>
+                            <li class="footer-li"><a href="#"><span>Marşrut xətləri</span></a></li>
+                            <li class="footer-li"><a href="Dasiyicilar.aspx"><span>Daşıyıcılar</span></a></li>
+                            <li class="footer-li"><span>Nəqliyyat Mübadilə Mərkəzləri</span></li>
+                            <li class="footer-li"><span>Yollarda vəziyyət</span></li>
+                            <li class="footer-li"><span>Haqqımızda</span></li>
+                            <li class="footer-li"><a href="Elaqe"><span>Əlaqə</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul id="footer-ul">
+                            <li class="footer-li sosial">
+                                <img src="logo/Face.png" />Facebook</li>
+                            <li class="footer-li sosial">
+                                <img src="logo/Insta.png" />Instagram</li>
+                            <li class="footer-li sosial">
+                                <img src="logo/Email.png" />E-mail</li>
+                            <li class="footer-li sosial">
+                                <img src="logo/YT.png" />YouTube</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <br />
+            </div>
+
+
+        </div>
+    </form>
+</body>
+</html>
